@@ -1,0 +1,209 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="page">
+    <!-- BEGIN header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__button">
+                    <a href="/" class="button button--theme_dark" title="Home">
+                        <svg class="icon icon-home">
+                            <use xlink:href="#icon-home"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__logo">
+                    <a href="/" class="logo" title="Milinea">
+                        <img src="img/logo.png" alt="Milinea logo" class="logo__image" width="214" height="66">
+                    </a>
+                </div>
+                <div class="header__button">
+                    <button type="button" class="button button--theme_dark js-menuToggle"
+                            aria-label="Toggle Navigation">
+                        <svg class="icon icon-menu">
+                            <use xlink:href="#icon-menu"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- BEGIN menu -->
+            <nav class="menu js-menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#0">Home</a></li>
+                    <li class="menu__item menu__item--is_active"><a class="menu__link" href="#0">My credits</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#0">About</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#0">Contact us</a></li>
+                </ul>
+            </nav>
+            <!-- END menu -->
+        </div>
+    </header>
+    <!-- END header -->
+
+    <div class="page__inner">
+        <!-- BEGIN content grid -->
+        <main class="container">
+            <div class="grid">
+                <!-- BEGIN row -->
+                <div class="row">
+                    <!-- BEGIN col -->
+                    <div class="col col--12">
+                        <!-- BEGIN card -->
+                        <div class="card">
+                            <div class="card__inner">
+                                <h1 class="heading">Límite de crédito autorizado</h1>
+                                <p class="paragraph">Haste el <span class="is_uppercase">[Fecha]</span></p>
+                                <div class="sum sum--size_big">300€</div>
+                            </div>
+                        </div>
+                        <!-- END card -->
+                    </div>
+                    <!-- END col -->
+
+                    <!-- BEGIN col -->
+                    <div class="col col--12">
+                        <!-- BEGIN card -->
+                        <div class="card">
+                            <div class="row">
+                                <div class="col col--4">
+                                    <h2 class="heading heading--style_secondary">Crédito dispuesto</h2>
+                                    <div class="card__sum sum sum--color_pink">0€</div>
+                                    <button type="button" class="button button--theme_pink">Devolver</button>
+                                </div>
+
+                                <div class="col col--4 col--align_center">
+                                    <span class="track"></span>
+                                </div>
+
+                                <div class="col col--4">
+                                    <h2 class="heading heading--style_secondary">Crédito disponible</h2>
+                                    <div class="card__sum sum">300€</div>
+                                    <button type="button" class="button">Disponer</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END card -->
+                    </div>
+                    <!-- END col -->
+
+                    <div class="flex-row">
+                        <!-- BEGIN col -->
+                        <div class="col col--6">
+                            <!-- BEGIN card -->
+                            <div class="card">
+                                <h2 class="heading heading--style_secondary">Próximo pago mensual mínimo</h2>
+
+                                <!-- BEGIN next-payment -->
+                                <div class="next-payment">
+                                    <div class="next-payment__sum">
+                                        <h3 class="heading heading--style_third">Importe</h3>
+                                    </div>
+                                    <div class="next-payment__date">
+                                        <h3 class="heading heading--style_third">Fecha</h3>
+                                    </div>
+                                    <div class="next-payment__no-result">No tienes ningún pago pendiente</div>
+                                </div>
+                                <!-- END next-payment -->
+                            </div>
+                            <!-- END card -->
+                        </div>
+                        <!-- END col -->
+
+                        <!-- BEGIN col -->
+                        <div class="col col--6">
+                            <!-- BEGIN card -->
+                            <div class="card">
+                                <h2 class="heading heading--style_secondary">Importe total adeudado</h2>
+                                <div class="sum sum--color_pink">0€</div>
+                            </div>
+                            <!-- END card -->
+                        </div>
+                        <!-- END col -->
+                    </div>
+                </div>
+                <!-- END row -->
+            </div>
+        </main>
+        <!-- END content grid -->
+    </div>
+
+    <!-- BEGIN footer -->
+    <footer class="footer">
+        <!-- BEGIN navigation -->
+        <!-- I used here nav and list structure only for more screen readers accessibility -->
+        <nav class="container">
+            <ul class="tabs">
+                <li class="tabs__item">
+                    <a href="#0" class="tab-button">
+                        <span class="tab-button__inner">
+                            <i class="tab-button__icon">
+                                <svg class="icon icon-file">
+                                    <use xlink:href="#icon-file"></use>
+                                </svg>
+                            </i>
+                            <span class="tab-button__text">Mis cuentas</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#0" class="tab-button">
+                        <span class="tab-button__inner">
+                            <i class="tab-button__icon">
+                                <svg class="icon icon-padlock">
+                                    <use xlink:href="#icon-padlock"></use>
+                                </svg>
+                            </i>
+                            <span class="tab-button__text">Mis tarjetas</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#0" class="tab-button">
+						<span class="tab-button__inner">
+							<i class="tab-button__icon">
+								<svg class="icon icon-master-card">
+									<use xlink:href="#icon-master-card"></use>
+								</svg>
+							</i>
+							<span class="tab-button__text">Mis disposiciones</span>
+						</span>
+                    </a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#0" class="tab-button">
+                        <span class="tab-button__inner">
+                            <i class="tab-button__icon">
+                                <svg class="icon icon-euro">
+                                    <use xlink:href="#icon-euro"></use>
+                                </svg>
+                            </i>
+                            <span class="tab-button__text">Mis pagó</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#0" class="tab-button">
+                        <span class="tab-button__inner">
+                            <i class="tab-button__icon">
+                                <svg class="icon icon-envelope">
+                                    <use xlink:href="#icon-envelope"></use>
+                                </svg>
+                            </i>
+                            <span class="tab-button__text">Mentasjes</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END navigation -->
+    </footer>
+    <!-- END footer -->
+</div>
+
+{% endblock %}

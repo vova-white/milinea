@@ -1,0 +1,34 @@
+html
+	font-size: 8px
+	+rmin(460)
+		font-size: 10px
+body
+	+fs(16)
+	background: $gray
+	+roboto
+	font-weight: 400
+	color: $primary
+	height: 100vh
+
+img
+	max-width: 100%
+	height: auto
+
+.button
+	display: inline-block
+	width: 100%
+	max-width: 115px
+	height: 30px
+	+fs(18)
+	font-weight: 300
+	color: $white
+	text-align: center
+	background: $primary
+	border-radius: 6px
+	&--theme
+		&_pink
+			background: $pink
+		&_dark
+			width: 55px
+			height: 55px
+			background: $primary--dark

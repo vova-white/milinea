@@ -1,0 +1,53 @@
+.page
+  height: 100vh
+  position: relative
+
+  &__inner
+    padding: 95px 0 22.5%
+    min-height: 100%
+    display: flex
+    align-items: center
+    +rmin(500)
+      padding-bottom: 95px
+
+.container
+  max-width: 940px
+  margin: 0 auto
+  position: relative
+
+.grid
+  display: flex
+  flex-direction: column
+
+.row
+  display: flex
+  flex-wrap: wrap
+
+.flex-row
+  width: 100%
+  display: flex
+  flex-wrap: nowrap
+  justify-content: space-between
+
+.col
+  position: relative
+  min-height: 1px
+  flex-grow: 1
+  width: 100%
+  max-width: 100%
+  flex-basis: 0
+  padding: 8px
+  &--12
+    width: 100%
+    flex: 0 0 100%
+  &--6
+    width: 50%
+    flex: 0 0 50%
+  &--4
+    width: 33.33333%
+    flex: 0 0 33.33333%
+
+  &--align_center
+    display: flex
+    justify-content: center
+    align-items: center
